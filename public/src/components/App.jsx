@@ -8,7 +8,7 @@ class App extends React.Component {
   }
 
   render() {
-    return(<div>Webpack is running</div>);
+    return (<div>Webpack is running</div>);
   }
 }
 

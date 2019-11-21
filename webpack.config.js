@@ -15,10 +15,10 @@ module.exports = {
         test: /\.jsx?/,
         include: srcDir,
         exclude: /(node_modules)/,
-        user: {
+        use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react']
+            presets: ['@babel/preset-env', '@babel/preset-react'],
           },
         },
       },
