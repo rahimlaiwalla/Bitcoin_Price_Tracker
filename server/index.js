@@ -8,12 +8,12 @@ let app = express();
 
 app.use(express.static(path.join(__dirname, '/../public/dist')));
 
-app.get('/getPrices', (req, res) => {
-  Axios.get('https://api.coindesk.com/v1/bpi/historical/close.json')
-    .then((response) => {
-      console.log(response.data.bpi);
-      res.send(response.data.bpi);
-    });
-});
+// app.get('/getPrices', (req, res) => {
+//   Axios.get('https://api.coindesk.com/v1/bpi/historical/close.json')
+//     .then((response) => {
+//       console.log(response.data.bpi);
+//       res.send(response.data.bpi);
+//     });
+// });
 
 app.listen(PORT, () => { console.log('Express Server Started on PORT: ', PORT); });

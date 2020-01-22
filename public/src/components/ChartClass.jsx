@@ -12,10 +12,15 @@ function ChartClass(props) {
             labels: props.monthData,
             datasets: [
               {
-                label: 'Bitcoin Price Trend',
+                label: 'Bitcoin Price in USD',
                 data: priceData,
               },
             ],
+          }
+        }
+        options={
+          {
+            xAxisID: '$',
           }
         }
       />
